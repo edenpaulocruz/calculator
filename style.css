@@ -3,19 +3,21 @@
   --button-hover: #d8d4bc;
   --calc-bg: #777;
   --button-color-0: #212529;
-  --button-color-1: #f00;
-  --button-color-2: #00f;
-  --button-color-3: #8a2be2;
+  --button-color-1: #f63e3e;
+  --button-color-2: #6161b2;
+  --button-color-3: #252567;
+  --button-color-4: #8ce196;
 }
 
 .dark-mode:root {
   --body-bg: #212529;
-  --button-hover: #9a6613;
-  --calc-bg: #000;
-  --button-color-0: #d8d4bc;
+  --button-hover: #4d482c;
+  --calc-bg: #777;
+  --button-color-0: #fafafa;
   --button-color-1: #f63e3e;
-  --button-color-2: #6161b2;
-  --button-color-3: #9264bd;
+  --button-color-2: #c7b03b;
+  --button-color-3: #87720b;
+  --button-color-4: #355d39;
 }
 
 * {
@@ -92,16 +94,20 @@ body {
 
 .button-clear:hover {
   background-color: var(--button-color-1);
-  color: var(--button-color-0);
+  color: var(--button-hover);
 }
 
 .button-operator {
   color: var(--button-color-2);
 }
 
+.button-operator:hover {
+  background-color: var(--button-color-4);
+}
+
 .button-equal {
   background-color: var(--button-color-2);
-  color: var(--button-color-0);
+  color: var(--button-hover);
 }
 
 .button-equal:hover {

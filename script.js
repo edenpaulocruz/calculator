@@ -1,8 +1,14 @@
+const page = document.querySelector('html')
+const switchToggle = document.querySelector('#switch-shadow')
 const display = document.querySelector('.display__input');
 const buttonsNumbers = document.querySelectorAll('.button-number');
 const buttonClear = document.querySelector('.button-clear');
 const buttonsOperators = document.querySelectorAll('.button-operator');
 const buttonEqual = document.querySelector('.button-equal');
+
+switchToggle.addEventListener('change', () => {
+  page.classList.toggle('dark-mode')
+})
 
 function clearDisplay() {
   display.value = 0;
